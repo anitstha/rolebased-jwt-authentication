@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CreateSchoolForm = () => {
   const [formData, setFormData] = useState({
@@ -107,6 +108,8 @@ const CreateSchoolForm = () => {
           Create School
         </button>
       </form>
+
+      <Link to="/get-schools" className="bg-blue-900 text-white py-2 px-4 m-8">All Schools</Link>
     </div>
   );
 };
